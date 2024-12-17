@@ -1,0 +1,80 @@
+<head>
+  <title>Form login</title>
+</head>
+<body>
+  <form action="" id="login">
+    <label for="username">Username</label>
+    <input type="text" placeholder="your name" name="your name" /><br />
+
+    <label for="email">Gmail</label>
+    <input type="email" placeholder="email" /><br />
+
+    <label for="Password">Password</label>
+    <input type="password" placeholder="password" /><br />
+    <div class="gender">
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" id="gender" />
+      <label for="Female">Female</label>
+      <input type="radio" name="gender" id="Female" />
+      <label for="Female">male</label>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</body>
+<style>
+  body {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url(/img/bgform.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #login {
+    color: darkcyan;
+    border: solid #5b6dcd 5px;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5b6dcd 3px;
+    padding: 5px;
+    border-radius: 9px;
+    outline: none;
+    background: transparent;
+    font-weight: 800;
+    color: #5b6dcd;
+    
+  }
+
+  .gender {
+    display: inline-flex;
+    gap: 10px;
+  }
+  button {
+    box-sizing: border-box;
+    width: 35%;
+    border: solid #5b6dcd 3px;
+    border-radius: 1rem;
+    padding: 5px;
+    overflow: hidden;
+    color: blue;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+
+  button:hover{
+    color: red;
+    background-color: blueviolet;
+    transition: .4s
+  }
+</style>

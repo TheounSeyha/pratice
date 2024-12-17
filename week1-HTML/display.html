@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <p class="text-xl">នេះគឺជាអក្សរទំហំធំពិសេស។</p>
+    <br /><br />
+
+    <p class="font-sans">នេះប្រើប្រាស់ត្រាតួអក្សរ sans-serif។</p>
+    <br /><br />
+
+    <p class="indent-4">អត្ថបទនេះត្រូវបានផ្គាប់ជួរអក្សរពីបន្ទាត់ដំបូង។</p>
+    <br /><br />
+
+    <p class="underline">អត្ថបទនេះមានបន្ទាត់ក្រោម។</p>
+    <br /><br />
+
+    <p class="tracking-wide">អត្ថបទនេះមានចន្លោះអក្សរធំ។</p>
+    <br /><br />
+
+    <p class="uppercase">អត្ថបទនេះត្រូវបានបំលែងទៅជាអក្សរធំទាំងអស់។</p>
+    <br /><br />
+
+    <p class="text-center">អត្ថបទនេះត្រូវបានរៀបចំទៅកណ្តាល។</p>
+    <br /><br />
+
+    <p class="text-blue-500">អត្ថបទនេះមានពណ៌ខៀវ។</p>
+    <br /><br />
+
+    <p class="leading-relaxed">Production-ready website templates</p>
+    <br /><br />
+
+    <p class="font-bold">នេះគឺជាអក្សរត្រូវបានបង្កើតជា Bold។</p>
+
+    <!-- ឧទាហរណ៍ប៊ូតុង -->
+    <button
+      class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+    >
+      Click Me
+    </button>
+
+    <button class="btn">Click Me</button>
+
+    <div class="bg-white text-black dark:bg-gray-800 dark:text-white p-4">
+      This text adapts to system preferences.
+    </div>
+    <button id="darkModeToggle" class="p-2 bg-blue-500 text-white rounded">
+      Toggle Dark Mode
+    </button>
+  </body>
+  <script>
+    // Toggle dark mode
+    const toggleDarkMode = () => {
+      document.documentElement.classList.toggle("dark");
+    };
+
+    // Example button
+    document
+      .getElementById("darkModeToggle")
+      .addEventListener("click", toggleDarkMode);
+
+    const userPrefersDark = localStorage.getItem("theme") === "dark";
+    if (userPrefersDark) {
+      document.documentElement.classList.add("dark");
+    }
+
+    document.getElementById("darkModeToggle").addEventListener("click", () => {
+      const isDark = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+  </script>
+</html>

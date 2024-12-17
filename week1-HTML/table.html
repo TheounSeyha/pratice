@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+
+        body{
+            font-size: 2rem;
+        }
+        table{
+            border-collapse: collapse;
+            background-color: cadetblue;
+        }
+        span{
+            color: blue;
+            font-weight: 1000;
+        }
+        caption{
+            color: blueviolet;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <table border="5" width="600" >
+        <caption>My Table</caption>
+        <thead style="color: chartreuse;" bgcolor="darkblue">
+          <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">ID</th>
+            <th colspan="2">Membership Date</th>
+            <th rowspan="2">Balance</th>
+          </tr>
+          <tr>
+            <th>Joined</th>
+            <th>Conceled</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr style="color:blue">
+                <td>Seyha</td>
+                <td>100</td>
+                <td>10-10-2022</td>
+                <td>10-10-2022</td>
+                <td>1000$</td>
+            </tr>
+             <tr style="color: aqua;">
+                <td>Seyha</td>
+                <td>100</td>
+                <td>10-10-2022</td>
+                <td>10-10-2022</td>
+                <td>1000$</td>
+            </tr>
+             <tr style="color: blueviolet;">
+                <td>Seyha</td>
+                <td>100</td>
+                <td>10-10-2022</td>
+                <td>10-10-2022</td>
+                <td>1000$</td>
+            </tr>
+             <tr style="color:burlywood;">
+                <td>Seyha</td>
+                <td>100</td>
+                <td>10-10-2022</td>
+                <td>10-10-2022</td>
+                <td>1000$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="color:brown; text-align: end;">Total Balance <span>=</span></td>
+                <td>50000$</td>
+            </tr>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+body {
+  background-image: url(https://i0.wp.com/technode.com/wp-content/uploads/2024/06/Plants-vs-Zombies.png?fit=1312%2C676&ssl=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container-item {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 20px;
+}
+.item {
+  background-color: rgb(220, 158, 158);
+  border-radius: 10px;
+}
+.item1 {
+  grid-column: span 2;
+  grid-row: 2;
+}
+.item2 {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  /* grid-row or grid-column : position / number of row or column that it takes */
+}
+.item3 {
+  grid-row: 1;
+}
+.item4 {
+  grid-row: 1;
+}
+section {
+  display: grid;
+  grid-template-columns: 1.4fr 0.5fr 1fr;
+  grid-template-rows: repeat(3, 50px);
+  gap: 5px;
+}
+
+.box1 {
+  background-color: blueviolet;
+}
+.box2 {
+  background-color: aqua;
+}
+.box3 {
+  background-color: antiquewhite;
+}
+.box4 {
+  background-color: pink;
+  grid-column: span 2;
+}
+.box5 {
+  background-color: chartreuse;
+}
+.box6 {
+  background-color: chocolate;
+}
+.box7 {
+  background-color: crimson;
+  grid-column: span 2;
+}
+
+.practice {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+}
+
+.iteam {
+  background-color: rebeccapurple;
+  place-content: center;
+  text-align: center;
+}
+.iteam1 {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-color: red;
+}
+.iteam2 {
+  grid-row: 1;
+}
+.iteam3 {
+  grid-row: 1;
+}
+.iteam4 {
+  grid-row: 1;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+
+.card {
+  background-color: antiquewhite;
+}
+.card-item1 {
+  grid-column: span 2;
+}
+.card-item2 {
+  grid-column: span 3;
+}
+.card-item3 {
+  grid-column: span 3;
+}
+.card-item4 {
+    grid-column: span 2;
+}
+.card-item5 {
+    grid-column: span 3;
+}
+.card-item6 {
+     grid-column: span 1;
+}
+.card-item7 {
+     grid-column: span 1;
+}
+.card-item8 {
+     grid-column: span 5;
+}
+
+@media (max-width:425px){
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,100px);
+  }
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+}
+header img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  display: flex;
+  width: 45vw;
+  justify-content: space-between;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(220, 220, 10);
+}
+
+
+.hero-content h2{
+  text-align: center;
+  font-size: 2rem;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.hero-content p{
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+}
+.tab-navbar{
+  background-color: burlywood;
+  font-family: cursive;
+}
+.tab-navbar{
+  width: 93%;
+  margin: auto;
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 50px;
+}
+.tab-item ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.tab-item ul .active{
+  background-color:darkblue ;
+  border-radius: 10px;
+}
+.tab-item li:hover{
+  background-color: blue;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: .6s;
+}
+.flex-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 50px;
+}
+.flex-item:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+  background-color: cadetblue;
+}
+.flex-item {
+  height: 450px;
+  width: auto;
+  background-color: burlywood;
+  width: calc(100% / 4 - 20px);
+  border-radius: 15px;
+}
+
+.flex-item img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 15px 15px 0 0;
+  margin-top: 5px;
+}
+.flex-item img:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 1rem black;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.label {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.label small {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.4rem;
+  font-style: normal;
+  color: dimgrey;
+  font-weight: 900;
+}
+.label i {
+  font-size: 2rem;
+}
+
+.bxs-star {
+  color: brown;
+}
+.bxs-star:hover {
+  color: chartreuse;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer small {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.buttom span {
+  font-family: fantasy;
+}
+.buttom p {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.label span {
+  color: orangered;
+}

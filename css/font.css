@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sevillana&family=Yuji+Mai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sevillana&family=Yuji+Mai&display=swap");
+@font-face {
+  font-family: hanuman, serif;
+  src: url(/fonts/Hanuman-Regular.ttf);
+}
+* {
+  font-family: "Roboto", hanuman, sans-serif;
+}
+.Container {
+  background-color: antiquewhite;
+  width: 50%;
+  letter-spacing: 5px;
+  border-radius: 1rem;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+
+p {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  padding: 5px;
+}
+
+.Container p,
+h2,
+span,
+small {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.Container h2 {
+  font-weight: 900;
+  font-style: normal;
+  font-variant: small-caps;
+}
+span {
+  text-transform: uppercase;
+}
+small {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.Container button {
+  margin: 2rem 2rem;
+  background-color: darkgoldenrod;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 5px 5px;
+  letter-spacing: 4px;
+  
+}
+.Container button:hover {
+  color: black;
+  background-color: aqua;
+}
+.khmer {
+  font-family: hanuman;
+  font-size: 1.2rem;
+}
+body {
+  margin: 0;
+  background-image: url(https://www.honeybunsnurseries.co.uk/wp-content/uploads/2014/12/Merry-Christmas-pictures-free.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+}
+nav li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+nav li a {
+  color: #000;
+}
