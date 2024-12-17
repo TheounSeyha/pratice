@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  background-image: url(https://gridbyexample.com/img/inflicted.png);
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+ul {
+  list-style: none;
+}
+.Text {
+  padding: 5%;
+  color: aliceblue;
+}
+.Text h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn a {
+  font-size: 15px;
+  color: wheat;
+}
+.navbar ul {
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.navbar li {
+  width: auto;
+}
+.navbar li:hover {
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+
+.card-items {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(6, 120px);
+  gap: 20px;
+  width: 85%;
+  margin: auto;
+}
+
+.card-box1 {
+  grid-column: span 5;
+  background-image: url(https://gridbyexample.com/img/inflicted.png);
+  border-radius: 5px;
+  color: aliceblue;
+}
+.card-box2 {
+  grid-column: span 2;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+
+.card-box3 {
+  grid-column: span 7;
+  background-color: blue;
+}
+
+.card-box4 {
+  grid-column: span 3;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card-box5 {
+  grid-column: span 4;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card-box6 {
+  grid-column: span 5;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+  position: relative;
+}
+.ribbon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #008000;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(-20deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-box7 {
+  grid-column: span 2;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card-box8 {
+  grid-column: span 3;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card-box9 {
+  grid-column: span 2;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card-box10 {
+  grid-column: span 2;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+.card-box11 {
+  grid-column: span 7;
+  background-image: url(https://gridbyexample.com/img/tiny_grid.png);
+}
+
+.card-box1,
+.card-box10,
+.card-box11,
+.card-box2,
+.card-box3,
+.card-box4,
+.card-box5,
+.card-box6,
+.card-box7,
+.card-box8,
+.card-box9 {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-image: url(https://gridbyexample.com/img/inflicted.png);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: auto;
+  border-radius: 5px;
+  width: 85%;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+section ul {
+  list-style: circle;
+  position: relative;
+  left:30px;
+}
+
+@media (max-width: 768px) {
+  .card-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar li {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .Text h2 {
+    font-size: 30px;
+  }
+
+  .card-box1,
+  .card-box2,
+  .card-box3,
+  .card-box4,
+  .card-box5,
+  .card-box6,
+  .card-box7,
+  .card-box8,
+  .card-box9,
+  .card-box10,
+  .card-box11 {
+    grid-column: span 2;
+    padding: 15px;
+  }
+
+  section {
+    width: 90%;
+    padding: 10px;
+  }
+
+  footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Text h2 {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    padding: 5px;
+  }
+
+  .navbar li {
+    font-size: 16px;
+  }
+
+  section ul {
+    padding-left: 20px;
+  }
+
+  section p {
+    padding: 5px 0;
+  }
+}
